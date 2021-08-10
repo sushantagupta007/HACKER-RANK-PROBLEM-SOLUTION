@@ -1,12 +1,17 @@
-function regexVar() {
-    /*
-     * Declare a RegExp object variable named 're'
-     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
-     */    
-    let re = /^([aeiou]).+\1$/
+function reverseString(s) {
     
-    
-    /*
-     * Do not remove the return statement
-     */
-    return re;
+    if(typeof s ==='number'){
+        console.log("s.split is not a function");
+        console.log(s);
+    }
+    if(typeof s ==='string'){
+        const splitStrin = s.split("");
+        const reverseStrin = splitStrin.reverse();
+        const reverse = reverseStrin.join("");
+        console.log(reverse);
+    } 
+}
+
+//Note: To Reverse a string first split it and form a array. string.split(""); ** It indicates no gap
+// Then reverse it reverse();
+// Then join it .join("") **It indicates No Gap 
